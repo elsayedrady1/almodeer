@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verify Account</title>
+</head>
+<body>
+    <!-- Message container to display verification status -->
+    <div id="message"></div>
+
+    <!-- JavaScript to handle URL parameter extraction and AJAX request -->
+    <script>
+        // Function to extract the ID from the URL
+        function getIdFromUrl() {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get('id');
+        }
+
+        // Function to make an AJAX request to the backend
+        // async function verifyAccount(id) {
+        //     try {
+        //         const response = await fetch(`/api/verify/${id}`, {
+        //             method: 'POST', // or 'GET' based on your backend setup
+        //         });
+        //         const result = await response.json();
+        //         document.getElementById('message').innerText = result.message;
+        //     } catch (error) {
+        //         console.error('Error:', error);
+        //         document.getElementById('message').innerText = 'Verification failed';
+        //     }
+        // }
+
+        // Extract the ID and verify the account
+        const id = getIdFromUrl();
+      console.log(id)
+
+      const messageElement = document.getElementById('message')
+      messageElement.innerText ="test"
+        // if (id) {
+        //     console.log(id)
+        //     // verifyAccount(id);
+        // } else {
+        //     document.getElementById('message').innerText = 'Invalid verification link';
+        // }
+    </script>
+</body>
+</html>

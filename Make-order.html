@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="AR" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme-color" content="#ff9800" /> <!--========== Theam color ==========-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+  <!--========== URL icon ==========-->
+  <link rel="icon" type="image/x-icon" href="./static/images/photo-202310051952461.png">
+
+  <!--========== SWIPER and Bootstrap CSS ==========-->
+  <link rel="stylesheet" href="./static/CSS/swiper.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+
+  <!--========== CSS Files link ==========-->
+  <link rel="stylesheet" href="./static/CSS/make-orderStyle.css">
+  <link rel="stylesheet" href="./static/CSS/essentials.css">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script type="text/javascript" src="./static/JS/jquery-3.7.1.min.js"></script>
+
+
+  <title>ارسال شحنه</title>
+</head>
+
+<body>
+
+  <!--========== Main ==========-->
+
+  <div class="Home">
+
+
+    <div class="DivHeaderTop">
+
+      <div class="right_half">
+        <div class="follow_frame">
+          <div class="FollowUs_title">تابعنا</div>
+          <div class="follow_line"></div>
+          <a href="https://www.facebook.com/profile.php?id=61552340681807" class="header_social"><i
+              class='bx bxl-facebook'></i></a>
+          <a href="https://www.instagram.com/almudairshippingcompany/" class="header_social"><i
+              class='bx bxl-instagram'></i></a>
+        </div>
+      </div>
+
+      <div class="left_half">
+        <div class="header_contact">
+
+          <div class="header_info">
+            <div class="header_contact_icons"><i class='bx bxs-envelope'></i></div>
+            <a href="#" class="Header_link">info@al-modeer.com</a>
+          </div>
+
+          <div class="header_info">
+            <div class="header_contact_icons"><i class='bx bxs-map'></i></div>
+            <div class="EgyptAlex" style="font-size: 15px; font-weight: 400;">مصر ,الشرقية</div>
+          </div>
+
+          <div class="header_info">
+            <div class="header_contact_icons"><i class='bx bxs-phone'></i></div>
+            <div class="phone_num" style="font-size: 15px; font-weight: 400;">+201017116977</div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+
+
+
+    <!--========== Nav ==========-->
+
+
+    <div class="Nav_container">
+
+      <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+
+      </div>
+
+      <a href="./index.html" class="nav_logo">
+        <img class="Header_logo" src="./static/images/photo-202310051952461.png" />
+      </a>
+
+      <div class="navandlogo_groub">
+
+        <nav class="navbar_header" id="sidemenu">
+          <div class="nav_bar">
+            <a href="./index.html" class="nav_title">الرئيسية</a>
+            <a href="./Who We Are.html" class="nav_title">من نحن</a>
+            <a href="./Services.html" class="nav_title">الخدمات</a>
+            <li class="dropdown">
+              <a class="nav_title title1">ارسال و تتبع الشحنات<i class='bx bxs-down-arrow dropdown_arrow'></i></a>
+              <ul class="dropdown_items">
+                <li><a href="./price-calculator.html" class="nav_title">حاسبة الأسعار</a></li>
+                <li><a href="#" class="nav_title">تتبع شحنة</a></li>
+                <li><a href="./Make-order.html" class="nav_title">ارسال شحنة</a></li>
+              </ul>
+            </li>
+            <a href="./Customers-Service.html" class="nav_title">خدمة العملاء</a>
+          </div>
+
+          <a href="./Log In.html" class="login_btnmopile" id="login_btn">
+            <i class='bx bx-log-in'></i>
+            <span>تسجيل الدخول</span>
+          </a>
+        </nav>
+
+      </div>
+
+      <div class="loginandswitchlang_groub">
+
+        <div class="language_switch">
+
+          <i class='bx bx-globe'></i>
+
+          <span class="switch-lang">
+            <input type="checkbox" id="switcher">
+            <label for="switcher"></label>
+          </span>
+
+        </div>
+
+        <a href="./Log In.html" class="Btn login_btn" id="login_btn">تسجيل الدخول</a>
+
+
+      </div>
+
+
+    </div>
+
+
+
+
+
+
+    <!--========== body intro ==========-->
+
+
+    <div class="main">
+      <div class="makeorder_container">
+        <form id="multiStepForm">
+            <div class="tab_container">
+                <div id="tab-contents">
+
+                    <!-- Sender data form -->
+                    <div class="tab-content sender_data active" id="tab-1">
+                        <div class="pagenum_container">
+                            <div class="pagenum_block active" id="tabnum-1">
+                                <div class="pagenum">1</div>
+                                <div class="pagetitle">معلومات المرسل</div>
+                            </div>
+                            <div class="linebetwen" id="line-1"></div>
+                            <div class="pagenum_block" id="tabnum-2">
+                                <div class="pagenum">2</div>
+                                <div class="pagetitle">معلومات المستلم</div>
+                            </div>
+                            <div class="linebetwen" id="line-2"></div>
+                            <div class="pagenum_block" id="tabnum-3">
+                                <div class="pagenum">3</div>
+                                <div class="pagetitle">تفاصيل الشحنة</div>
+                            </div>
+                            <div class="linebetwen" id="line-3"></div>
+                            <div class="pagenum_block" id="tabnum-4">
+                                <div class="pagenum">4</div>
+                                <div class="pagetitle">تاكيد الطلبية</div>
+                            </div>
+                        </div>
+
+
+                        <div class="form_title">رجاءا تعبئة معلومات المرسل</div>
+
+
+                        <div class="formItems">
+                          <div class="form_item">
+                            <label for="sender_name">الأسم</label>
+                            <input type="text" id="sender_name" name="sender_name" required>
+                          </div>
+                          <div class="form_item">
+                              <label for="sender_email">البريد الالكتروني</label>
+                              <input type="email" id="sender_email" name="sender_email" required>
+                          </div>
+                          <div class="form_item">
+                              <label for="sender_phone">رقم التليفون</label>
+                              <input type="tel" id="sender_phone" name="sender_phone" required>
+                          </div>
+                          <div class="form_item">
+                              <label for="sender_city">البلد</label>
+                              <select id="sender_city" name="sender_city" class="city_select" required>
+                                  <option value="" disabled selected>اختر مدينة</option>
+                              </select>
+                          </div>
+                          <div class="form_item">
+                              <label for="sender_address">العنوان</label>
+                              <input type="text" id="sender_address" name="sender_address" required>
+                          </div>
+                          <div class="form_item">
+                              <label for="sender_streetname">اسم الشارع</label>
+                              <input type="text" id="sender_streetname" name="sender_streetname" required>
+                          </div>
+                          <div class="form_item">
+                              <label for="sender_housenum">رقم المنزل</label>
+                              <input type="text" id="sender_housenum" name="sender_housenum" required>
+                          </div>
+                          <div class="form_item">
+                              <label for="sender_addressHint">اقرب مؤسسة او معلومة تساعدنا اكثر</label>
+                              <input type="text" id="sender_addressHint" name="sender_addressHint" required>
+                          </div>
+                        </div>
+                        
+                    </div>
+
+                    <!-- Receiver data form -->
+                    <div class="tab-content reciver_data" id="tab-2">
+                        <div class="pagenum_container">
+                            <div class="pagenum_block active" id="tabnum-1">
+                                <div class="pagenum">1</div>
+                                <div class="pagetitle">معلومات المرسل</div>
+                            </div>
+                            <div class="linebetwen active" id="line-1"></div>
+                            <div class="pagenum_block active" id="tabnum-2">
+                                <div class="pagenum">2</div>
+                                <div class="pagetitle">معلومات المستلم</div>
+                            </div>
+                            <div class="linebetwen" id="line-2"></div>
+                            <div class="pagenum_block" id="tabnum-3">
+                                <div class="pagenum">3</div>
+                                <div class="pagetitle">تفاصيل الشحنة</div>
+                            </div>
+                            <div class="linebetwen" id="line-3"></div>
+                            <div class="pagenum_block" id="tabnum-4">
+                                <div class="pagenum">4</div>
+                                <div class="pagetitle">تاكيد الطلبية</div>
+                            </div>
+                        </div>
+
+
+                        <div class="form_title">رجاءا تعبئة معلومات المستلم</div>
+
+
+                        <div class="formItems">
+                          <div class="form_item">
+                            <label for="reciver_name">الأسم</label>
+                            <input type="text" id="reciver_name" name="reciver_name" required>
+                          </div>
+                          <div class="form_item">
+                              <label for="reciver_email">البريد الالكتروني</label>
+                              <input type="email" id="reciver_email" name="reciver_email" required>
+                          </div>
+                          <div class="form_item">
+                              <label for="reciver_phone">رقم التليفون</label>
+                              <input type="tel" id="reciver_phone" name="reciver_phone" required>
+                          </div>
+                          <div class="form_item">
+                              <label for="reciver_city">البلد</label>
+                              <select id="reciver_city" name="reciver_city" class="city_select" required>
+                                  <option value="" disabled selected>اختر مدينة</option>
+                              </select>
+                          </div>
+                          <div class="form_item">
+                              <label for="reciver_address">العنوان</label>
+                              <input type="text" id="reciver_address" name="reciver_address" required>
+                          </div>
+                          <div class="form_item">
+                              <label for="reciver_streetname">اسم الشارع</label>
+                              <input type="text" id="reciver_streetname" name="reciver_streetname" required>
+                          </div>
+                          <div class="form_item">
+                              <label for="reciver_housenum">رقم المنزل</label>
+                              <input type="text" id="reciver_housenum" name="reciver_housenum" required>
+                          </div>
+                          <div class="form_item">
+                              <label for="reciver_addressHint">اقرب مؤسسة او معلومة تساعدنا اكثر</label>
+                              <input type="text" id="reciver_addressHint" name="reciver_addressHint" required>
+                          </div>
+                        </div>
+                        
+                    </div>
+
+                    <!-- Shipment data form -->
+                    <div class="tab-content shipment_data" id="tab-3">
+                        <div class="pagenum_container">
+                            <div class="pagenum_block active" id="tabnum-1">
+                                <div class="pagenum">1</div>
+                                <div class="pagetitle">معلومات المرسل</div>
+                            </div>
+                            <div class="linebetwen active" id="line-1"></div>
+                            <div class="pagenum_block active" id="tabnum-2">
+                                <div class="pagenum">2</div>
+                                <div class="pagetitle">معلومات المستلم</div>
+                            </div>
+                            <div class="linebetwen active" id="line-2"></div>
+                            <div class="pagenum_block active" id="tabnum-3">
+                                <div class="pagenum">3</div>
+                                <div class="pagetitle">تفاصيل الشحنة</div>
+                            </div>
+                            <div class="linebetwen" id="line-3"></div>
+                            <div class="pagenum_block" id="tabnum-4">
+                                <div class="pagenum">4</div>
+                                <div class="pagetitle">تاكيد الطلبية</div>
+                            </div>
+                        </div>
+
+
+                        <div class="form_title">رجاءا تعبئة تفاصيل الشحنة</div>
+
+                        <div class="formItems_shipment">
+                          <div class="form_item">
+                            <label for="content">محتويات الشحنة</label>
+                            <input type="text" id="content" name="content" required>
+                          </div>
+                          <div class="form_item">
+                              <label for="units_weight">الوزن</label>
+                              <input type="number" id="units_weight" name="units_weight" required>
+                          </div>
+                          <div class="form_item">
+                            <label for="units_size">المقاس</label>
+                            <select id="units_size" required>
+                              <option value="" disabled selected>أختر المقاس</option>
+                              <option value="abovestandard">اكبر من 40*40*30</option>
+                              <option value="belowstandard">اقل من 40*40*30</option>
+                            </select>
+                          </div>
+                          <div class="form_item">
+                              <label for="units_number">عدد القطع</label>
+                              <input type="number" id="units_number" name="units_number" required>
+                          </div>
+                          
+                        </div>
+
+                        <div class="unitstype_container">
+                          <div class="unitstype_tilte">نوع الشحنة</div>
+                          <div class="type_choose">
+                              <div id="document">
+                                  <div class="doc_name">وثائق</div>
+                                  <i class='bx bx-file'></i>
+                              </div>
+                              <div id="package">
+                                  <div class="doc_name">طرد</div>
+                                  <i class='bx bx-package'></i>
+                              </div>
+                          </div>
+                      </div>
+                        
+                    </div>
+
+                    <!-- Confirm order form -->
+                    <div class="tab-content priceandconfirm" id="tab-4">
+                        <div class="pagenum_container">
+                            <div class="pagenum_block active" id="tabnum-1">
+                                <div class="pagenum">1</div>
+                                <div class="pagetitle">معلومات المرسل</div>
+                            </div>
+                            <div class="linebetwen active" id="line-1"></div>
+                            <div class="pagenum_block active" id="tabnum-2">
+                                <div class="pagenum">2</div>
+                                <div class="pagetitle">معلومات المستلم</div>
+                            </div>
+                            <div class="linebetwen active" id="line-2"></div>
+                            <div class="pagenum_block active" id="tabnum-3">
+                                <div class="pagenum">3</div>
+                                <div class="pagetitle">تفاصيل الشحنة</div>
+                            </div>
+                            <div class="linebetwen active" id="line-3"></div>
+                            <div class="pagenum_block active" id="tabnum-4">
+                                <div class="pagenum">4</div>
+                                <div class="pagetitle">تاكيد الطلبية</div>
+                            </div>
+                        </div>
+                        <div class="form_title">اوشكنا علي الانتهاء</div>
+                        <div class="price_output">shipment price : 100 L.E</div>
+                    </div>
+                </div>
+
+                <div class="navigation-buttons">
+                    <button type="button" id="prevBtn" class="Btn" disabled>السابق</button>
+                    <button type="button" id="nextBtn" class="Btn">التالي</button>
+                </div>
+            </div>
+        </form>
+    </div>
+        
+        
+
+
+
+
+
+
+
+      <!--========== Footer area ==========-->
+
+
+      <div class="FooterArea">
+        <div class="Footer_contentFrame">
+
+          <div class="rightrow1">
+
+            <a href="./index.html"><img class="Footer_logo" src="./static/images/photo-202310051952461.png" /></a>
+
+            <div class="Footerlogo_title">شركة المدير للشحن و النقل</div>
+
+            <div class="Footer_socialmedia">
+              <div class="social_circle">
+                <a href="https://www.facebook.com/profile.php?id=61552340681807" class="Footer_social"><i
+                    class='bx bxl-facebook'></i></a>
+              </div>
+
+              <div class="social_circle">
+                <a href="https://www.instagram.com/almudairshippingcompany/" class="Footer_social"><i
+                    class='bx bxl-instagram'></i></a>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="Footer_rightFrame reveal">
+
+            <div class="Footer_nav">
+
+              <div class="left_group">
+                <div class="left_title">صفحات</div>
+                <div class="left">
+                  <a href="./index.html" class="nav_title">الرئيسية</a>
+                  <a href="./Who We Are.html" class="nav_title">من نحن</a>
+                  <a href="./Services.html" class="nav_title">الخدمات</a>
+                  <a href="./Customers-Service.html" class="nav_title">خدمة العملاء</a>
+                </div>
+              </div>
+
+              <div class="right_group">
+                <div class="right_title">خدمات</div>
+                <div class="right">
+                  <a href="./Make-order.html" class="nav_title">ارسال الشحنة</a>
+                  <a href="./price-calculator.html" class="nav_title">حاسبة الاسعار</a>
+                  <a href="#" class="nav_title">تتبع الشحنة</a>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="Footer_contact">
+              <div class="Footercontact_title">وسائل التواصل</div>
+
+              <div class="Footercontact_group">
+
+                <div class="Footer_Contact_numbers">
+                  <div class="Footer_contact_icons"><i class='bx bxs-phone'></i></div>
+                  <div class="Phone_numbers">+201017116977</div>
+                </div>
+
+                <div class="Footer_email">
+                  <div class="Footer_contact_icons"><i class='bx bxs-envelope'></i></div>
+                  <a href="#" class="LinkExampleExampleCom">info@al-modeer.com</a>
+                </div>
+
+                <div class="Footer_location">
+                  <div class="Footer_contact_icons"><i class='bx bxs-map'></i></div>
+                  <div class="Location_text">مصر ,الشرقية</div>
+                </div>
+
+              </div>
+            </div>
+
+
+          </div>
+
+
+        </div>
+
+        <div class="Footer_Copyright"> ©المدير للشحن و النقل 2023. جميع الحقوق محفوظة .<br /> <br />Powered by <a
+            href="https://wa.me/+201551511336"
+            style="text-decoration: none; color: #ff9800; font-size: 15px; font-family: Roboto; font-weight: 700; line-height: 15px;">Enchanted
+            Creations</a> <br></div>
+      </div>
+
+
+    </div>
+
+    <!--========== SCROLL UP ==========-->
+
+    <span class="up"><i class='bx bxs-chevrons-up'></i></span>
+
+
+    <script src="./static/JS/swiper.min.js"></script>
+    <script src="./static/JS/main.js"></script>
+    <script src="./static/JS/make-order.js"></script>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/acf6af364e.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+
+</body>
+<script src="./static/JS/price-list.js"></script>
+
+</html>

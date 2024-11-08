@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+:root{
+    --primary: #ff9800;
+    --secoundary: #131313;
+    --thired: #FFF;
+    --fontcolor: #FFF;
+    --background1: #646464;
+    --filter: rgba(19, 19, 19, 0.60);
+    --fontcolor2: #808080;
+    --fontcolor3: #131313;
+}
+
+
+
+
+
+
+.SupportRequestcontainer{
+    padding: 80px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FBFBFB;
+    border-bottom: 1px solid var(--background1);
+}
+#SupportRequest{
+    padding: 70px 60px;
+    gap: 100px;
+    background: var(--thired);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--primary);
+    border-radius: 20px;
+}
+.SupportRequest_header{
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.SupportRequest_header .title{
+    font-size: 60px;
+    font-weight: 500;
+    color: var(--primary);
+}
+.SupportRequest_header .subtitle{
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--fontcolor2);
+}
+.SupportRequest_inputs{
+    gap: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.SupportRequest_inputs .input_box{
+    width: 30vw;
+}
+.SupportRequest_inputs .input_box label{
+    font-size: 18px;
+}
+.SupportRequest_inputs .FormInput_Message{
+    width: 30vw;
+    height: 30vh;
+    background: var(--thired);
+    border-radius: 3px;
+    border: 1px var(--fontcolor2) solid;
+}
+#message_supportrequest{
+    width: 30vw;
+    margin: 20px 20px 0px 0px;
+    border: none;
+    outline: none;
+    background: transparent;
+    align-self: stretch;
+    justify-content: flex-start;
+    display: inline-flex
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-- ======== Our Branches Area =======--*/
+
+.OurBranches_container{
+    padding: 60px 80px;
+    gap: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: Cairo;
+    border-bottom: 1px solid var(--background1);
+}
+.Branches_box{
+    gap: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.Branches_title{
+    color: var(--fontcolor3);
+    font-size: 60px;
+    font-weight: 600;
+}
+.Branches_group,
+.Branches{
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.Branches_subtitle{
+    color: var(--primary);
+    font-size: 30px;
+    font-weight: 600;
+}
+.Branches{
+    gap: 20px;
+}
+.Branch_name{
+    color: var(--fontcolor3);
+    font-size: 30px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.map{
+    border: 2px solid var(--primary);
+}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width : 250px) and (max-device-width: 1200px){
+
+    .SupportRequestcontainer{
+        padding: 80px 10px;
+    }
+    #SupportRequest{
+        padding: 50px 15px;
+        gap: 100px;
+    }
+    .SupportRequest_header{
+        gap: 30px;
+    }
+    .SupportRequest_header .title{
+        font-size: 40px;
+    }
+    .SupportRequest_header .subtitle{
+        font-size: 15px;
+    }
+    .SupportRequest_inputs{
+        gap: 100px;
+    }
+    .SupportRequest_inputs .input_box{
+        width: 70vw;
+    }
+    .SupportRequest_inputs .input_box label{
+        font-size: 15px;
+    }
+    .SupportRequest_inputs .FormInput_Message{
+        width: 70vw;
+        height: 30vh;
+        background: var(--thired);
+        border-radius: 3px;
+        border: 1px var(--fontcolor2) solid;
+    }
+    #message_supportrequest{
+        width: 70vw;
+        margin: 20px 20px 0px 0px;
+        border: none;
+        outline: none;
+        background: transparent;
+        align-self: stretch;
+        justify-content: flex-start;
+        display: inline-flex
+    }
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*-- ======== Our Branches Area =======--*/
+
+    .OurBranches_container{
+        padding: 30px;
+        gap: 50px;
+    }
+    .Branches_box{
+        gap: 50px;
+        display: flex;
+        flex-direction: column;
+    }
+    .Branches_title{
+        color: var(--fontcolor3);
+        font-size: 40px;
+        font-weight: 600;
+    }
+    .Branches_group,
+    .Branches{
+        gap: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .Branches_subtitle{
+        color: var(--primary);
+        font-size: 25px;
+        font-weight: 600;
+    }
+    .Branches{
+        gap: 20px;
+    }
+    .Branch_name{
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .location{
+        width: 85vw;
+        height: 50vh;
+    }
+}
+
+@media only screen and (min-width : 491px) and (max-width: 800px){
+
+}
+
+
+@media only screen and (min-width : 600px) and (max-width: 1200px){
+    #SupportRequest{
+        padding: 50px 50px;
+    }
+    .SupportRequest_inputs .input_box{
+        width: 50vw;
+    }
+    .SupportRequest_inputs .input_box label{
+        font-size: 15px;
+    }
+    .SupportRequest_inputs .FormInput_Message{
+        width: 50vw;
+        height: 20vh;
+    }
+    
+}

@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+:root{
+    --primary: #ff9800;
+    --secoundary: #131313;
+    --thired: #FFF;
+    --fontcolor: #FFF;
+    --background1: #646464;
+    --filter: rgba(19, 19, 19, 0.60);
+    --fontcolor2: #808080;
+    --fontcolor3: #131313;
+}
+
+
+.OurServices_area{
+    gap: 30px;
+    padding: 35px 0px; 
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid var(--background1);
+}
+.OurServices_container{
+    gap: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.OurServices_title,
+.OurServices_subtitle{
+    color: var(--fontcolor3);
+    font-family: Cairo;
+    font-size: 60px;
+    font-weight: 600;
+}
+.OurServices_subtitle{
+    font-size: 30px;
+    font-weight: 500;
+}
+.services_groub{
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.servicesimg_circle{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    border: 1px solid var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.servicesimg_circle img{
+    object-fit: contain;
+}
+.services_content{
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.service_name{
+    color: var(--fontcolor3);
+    font-family: Cairo;
+    font-size: 30px;
+    font-weight: 500;
+}
+.service_details{
+    color: var(--fontcolor2);
+    font-family: Cairo;
+    font-size: 20px;
+    font-weight: 500;
+}
+.MoreServices{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--primary);
+    transition: 0.3s;
+}
+.MoreServices:hover{
+    color: var(--secoundary);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-- ======== Need Help Area =======--*/
+
+.NeedHelp_container{
+    gap: 150px;
+    padding: 60px 80px 100px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    border-bottom: 1px solid var(--background1);
+}
+.NeedHelp_title{
+    font-size: 30px;
+    font-weight: 600;
+}
+.ContactArea_img{
+    border-radius: 5px;
+}
+.ContactArea_frame{
+    gap: 30px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+}
+.ContactArea_head{
+    gap: 10px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+}
+#Contact_form{
+    gap: 20px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+}
+.FormInput,
+.FormInput_Message{
+    height: 54px;
+    background: #ff990066;
+    border-radius: 3px;
+    border: 1px rgba(197, 151, 24, 0.43) solid;
+    justify-content: flex-start;
+    align-items: center;
+    display: inline-flex;
+}
+#phone{
+    text-align: right;
+}
+.FormInput_Message{
+    height: 166px;
+}
+.FormInput input,
+#message{
+    width: 516px;
+    margin-right: 20px;
+    border: none;
+    outline: none;
+    background: transparent;
+    align-self: stretch;
+    justify-content: flex-start;
+    display: inline-flex
+}
+#message{
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-- ======== Our Branches Area =======--*/
+
+.OurBranches_container{
+    padding: 60px 80px;
+    gap: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: Cairo;
+    border-bottom: 1px solid var(--background1);
+}
+.Branches_box{
+    gap: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.Branches_title{
+    color: var(--fontcolor3);
+    font-size: 60px;
+    font-weight: 600;
+}
+.Branches_group,
+.Branches{
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.Branches_subtitle{
+    color: var(--primary);
+    font-size: 30px;
+    font-weight: 600;
+}
+.Branches{
+    gap: 20px;
+}
+.Branch_name{
+    color: var(--fontcolor3);
+    font-size: 30px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.map{
+    border: 2px solid var(--primary);
+}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width : 250px) and (max-device-width: 1200px){
+
+
+     /*-- ======== Services Area =======--*/
+
+     .OurServices_area{
+        gap: 30px;
+        padding: 35px 0px; 
+    }
+    .OurServices_title,
+    .OurServices_subtitle{
+        font-size: 40px;
+        font-weight: 600;
+    }
+    .OurServices_subtitle{
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .OurServices_container{
+        gap: 80px;
+        grid-template-columns: 1fr;
+    }
+
+    .service_name{
+        font-size: 30px;
+        font-weight: 500;
+    }
+    .service_details{
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .MoreServices{
+        font-size: 18px;
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*-- ======== Need Help Area =======--*/
+
+    .NeedHelp_container{
+        gap: 100px;
+        padding: 50px 25px;
+        flex-direction: column;
+    }
+    .DivContactArea{
+        gap: 50px;
+        display: grid;
+    }
+    .ContactArea_img{
+        width: 100%;
+        aspect-ratio: 3/2;
+        object-fit: contain;
+    }
+    .ContactArea_frame{
+        width: 100%;
+    }
+    .ContactArea_head{
+        margin-left: 35px;
+    }
+    .ContactArea_title{
+        font-size: 13px;
+    }
+    .ContactArea_subtitle{
+        font-size: 29px;
+    }
+    #Contact_form{
+        margin-right: 0px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        display: grid;
+    }
+    .FormInput_Message{
+        height: 166px;
+    }
+    .FormInput input,
+    #message{
+        width: 300px;
+    }
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*-- ======== Our Branches Area =======--*/
+
+    .OurBranches_container{
+        padding: 30px;
+        gap: 50px;
+    }
+    .Branches_box{
+        gap: 50px;
+        display: flex;
+        flex-direction: column;
+    }
+    .Branches_title{
+        color: var(--fontcolor3);
+        font-size: 40px;
+        font-weight: 600;
+    }
+    .Branches_group,
+    .Branches{
+        gap: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .Branches_subtitle{
+        color: var(--primary);
+        font-size: 25px;
+        font-weight: 600;
+    }
+    .Branches{
+        gap: 20px;
+    }
+    .Branch_name{
+        color: var(--fontcolor3);
+        font-size: 20px;
+        font-weight: 600;
+        cursor: pointer;
+    }
+    .map{
+        border: 2px solid var(--primary);
+    }
+    .location{
+        width: 85vw;
+        height: 50vh;
+    }
+}
+
+@media only screen and (min-width : 491px) and (max-width: 800px){
+
+}
+
+
+@media only screen and (min-width : 600px) and (max-width: 1200px){
+
+    .OurServices_container{
+        gap: 50px;
+        grid-template-columns: 1fr 1fr;
+    }
+ 
+    
+}

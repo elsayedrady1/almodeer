@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="AR" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="theme-color" content="#ff9800" />
+    <!--========== Theam color ==========-->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1,maximum-scale=1"
+    />
+
+    <!--========== ICONS ==========-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./static/images/photo-202310051952461.png"
+    />
+
+    <!--========== BOXICONS ==========-->
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!--========== SWIPER CSS ==========-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+
+    <!--========== CSS Files link ==========-->
+    <link rel="stylesheet" href="./static/CSS/log in and sign upStyle.css" />
+    <link rel="stylesheet" href="./static/CSS/essentials.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/JS/jquery-3.7.1.min.js"></script>
+
+    <title>انشاء حساب | المدير للشحن و النقل</title>
+  </head>
+  <body>
+    <!--========== Main ==========-->
+
+    <div class="Home signup_home">
+      <div class="login_form">
+        <a href="./index.html" class="form_logo"
+          ><img src="./static/images/photo-202310051952461.png"
+        /></a>
+
+        <div class="form_contint">
+          <form id="signup_form" class="forminput_container">
+            <div class="form_title">انشاء حساب</div>
+
+            <div class="form_inputs">
+              <div class="signupname_group">
+                <div class="input_box">
+                  <input type="text" id="firstname_signup" required />
+                  <label for="firstname_signup">الاسم الاول</label>
+                </div>
+
+                <div class="input_box">
+                  <input type="text" id="lastname_signup" required />
+                  <label for="lastname_signup">الاسم الاخير</label>
+                </div>
+              </div>
+
+              <div class="input_box">
+                <input type="text" id="signup_email" required />
+                <label for="signup_email">البريد الالكتروني</label>
+              </div>
+
+              <div class="input_box">
+                <input type="password" id="signup_password" required />
+                <label for="signup_password">كلمة المرور</label>
+              </div>
+
+              <div class="input_box">
+                <input type="password" id="confirmsignup_password" required />
+                <label for="confirmsignup_password">تأكيد كلمة المرور</label>
+              </div>
+            </div>
+          </form>
+
+          <div class="Forgetandremember">
+            <div class="rememberthisdevice">
+              <label for="rememberthisdevicecheck">تذكر هذا الجهاز</label>
+              <input type="checkbox" id="rememberthisdevicecheck" />
+            </div>
+          </div>
+
+          <div
+            id="output"
+            style="font-size: 16px; width: 50%; text-align: center"
+          ></div>
+
+          <div class="LoginAndRegisterButtons">
+            <button class="Btn signUpForm_btn" type="submit" form="signup_form">
+              انشاء حساب
+            </button>
+            <a href="./Log In.html" class="Btn MoveTo_loginForm"
+              >لدي حساب بالفعل</a
+            >
+          </div>
+
+          <div class="Form_decoration">
+            <div class="line1"></div>
+            <div class="Text">او سجل عن طريق</div>
+            <div class="line1"></div>
+          </div>
+
+          <div class="GoogleAndFacebook_login">
+            <div class="icon_box" id="facebookSignup">
+              <i class="bx bxl-facebook"></i>
+            </div>
+            <div class="icon_box" id="googleSignup">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="50"
+                height="50"
+                viewBox="0 0 50 50"
+                fill="none"
+              >
+                <g clip-path="url(#clip0_1_1094)">
+                  <path
+                    d="M49.9736 25.4675C49.9736 23.4191 49.8035 21.9242 49.4354 20.374H25.498V29.6198H39.5487C39.2656 31.9175 37.7358 35.3778 34.3364 37.703L34.2887 38.0126L41.8573 43.7422L42.3817 43.7933C47.1974 39.4471 49.9736 33.0525 49.9736 25.4675Z"
+                    fill="#4285F4"
+                  />
+                  <path
+                    d="M25.4977 49.8284C32.3813 49.8284 38.1602 47.6137 42.3813 43.7937L34.336 37.7034C32.1831 39.1706 29.2935 40.1948 25.4977 40.1948C18.7556 40.1948 13.0333 35.8489 10.9935 29.8418L10.6945 29.8666L2.8246 35.8183L2.72168 36.0979C6.91422 44.2365 15.526 49.8284 25.4977 49.8284Z"
+                    fill="#34A853"
+                  />
+                  <path
+                    d="M10.9942 29.8418C10.456 28.2916 10.1445 26.6306 10.1445 24.9143C10.1445 23.1979 10.456 21.537 10.9659 19.9869L10.9516 19.6567L2.98309 13.6094L2.72238 13.7306C0.994429 17.1078 0.00292969 20.9004 0.00292969 24.9143C0.00292969 28.9283 0.994429 32.7206 2.72238 36.0979L10.9942 29.8418Z"
+                    fill="#FBBC05"
+                  />
+                  <path
+                    d="M25.4976 9.6334C30.285 9.6334 33.5144 11.6542 35.3558 13.3429L42.5512 6.47767C38.1321 2.46374 32.3813 0 25.4976 0C15.526 0 6.91422 5.59179 2.72168 13.7303L10.9652 19.9866C13.0333 13.9796 18.7556 9.6334 25.4976 9.6334Z"
+                    fill="#700D0F"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_1_1094">
+                    <rect width="50" height="50" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./static/JS/sign-up.js"></script>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/acf6af364e.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

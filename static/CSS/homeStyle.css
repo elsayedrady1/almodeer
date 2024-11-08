@@ -1,0 +1,1101 @@
+:root{
+    --primary: #ff9800;
+    --secoundary: #131313;
+    --thired: #FFF;
+    --fontcolor: #FFF;
+    --background1: #646464;
+    --filter: rgba(19, 19, 19, 0.60);
+    --fontcolor2: #808080;
+    --fontcolor3: #131313;
+}
+
+
+
+
+
+
+/*-- ======== Slider =======--*/
+
+.slider .filter{
+    position: absolute;
+    background: var(--filter);
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+}
+.slider,
+.slider img{
+    width: 100%;
+    height: 60vw;
+}
+.inner_text{
+    position: absolute;
+    top: 20%;
+    right: 20%;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: right;
+    color: var(--fontcolor);
+    z-index: 2;
+}
+.slider_text1{
+    font-size: 50px;
+    font-weight: 700;
+    font-family: Cairo;
+}
+.slider_text2{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+/*-- ======== track shipment =======--*/
+
+.track_shipment{
+    padding: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.trackshipment_container{
+    gap: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.trackshipment_options{
+    gap: 120px;
+    display: flex;
+    justify-content: center;
+}
+.trackshipment_options a{
+    gap: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--fontcolor2);
+    transition: 0.3s;
+}
+.trackshipment_options a:hover{
+    color: var(--primary);
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+}
+#track.active{
+    color: var(--primary);
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+}
+.trackinput_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    opacity: 0;
+    transition: 0.5s ease;
+}
+.trackinput_container.active{
+    opacity: 1;
+}
+.trackshipment_output{
+    font-size: 1.3em;
+    font-weight: 500;
+    color: green;
+}
+.trackshipment_input{
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.shipmentnumber_group{
+    display: inline-flex;
+    position: relative;
+    border-bottom: 1px solid var(--fontcolor2);
+}
+.shipmentnumber_group input{
+    width: 735.003px;
+    border: none;
+    outline: none;
+    text-align: right;
+}
+.shipmentnumber_group label{
+    position: absolute;
+    top: 15px;
+    right: 5px;
+    transform: translateY(-50%);
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--fontcolor3);
+    pointer-events: none;
+    transition: .5s ease;
+}
+.shipmentnumber_group input:focus~label,
+.shipmentnumber_group input:valid~label{
+    top: -10px;
+}
+.Track_btn{
+    margin-bottom: 10px;
+}
+.trackshipment_note{
+    color: var(--fontcolor2);
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+
+
+
+
+
+
+/*-- ======== Services Area =======--*/
+
+.OurServices_area{
+    gap: 30px;
+    padding: 35px 0px; 
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid var(--background1);
+}
+.OurServices_title,
+.OurServices_subtitle{
+    color: var(--fontcolor3);
+    font-family: Cairo;
+    font-size: 60px;
+    font-weight: 600;
+}
+.OurServices_subtitle{
+    font-size: 30px;
+    font-weight: 500;
+}
+.OurServices_container{
+    gap: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.services_groub{
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.servicesimg_circle{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    border: 1px solid var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.servicesimg_circle img{
+    object-fit: contain;
+}
+.services_content{
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.service_name{
+    color: var(--fontcolor3);
+    font-family: Cairo;
+    font-size: 30px;
+    font-weight: 500;
+}
+.service_details{
+    color: var(--fontcolor2);
+    font-family: Cairo;
+    font-size: 20px;
+    font-weight: 500;
+}
+.MoreServices{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--primary);
+    transition: 0.3s;
+}
+.MoreServices:hover{
+    color: var(--secoundary);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-- ======== Testimonial Area =======--*/
+
+.Testimonial_container,
+.News_container{
+    gap: 80px;
+    padding: 60px 50px 100px;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid var(--background1);
+}
+.Testimonial_header,
+.News_header{
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--fontcolor3);
+    font-family: Cairo;
+}
+.Testimonial_title,
+.News_title{
+    font-size: 60px;
+    font-weight: 600;
+}
+.Testimonial_subtitle{
+    font-size: 30px;
+    font-weight: 500;
+}
+#carouselExampleIndicators ol{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    z-index: 3;
+}
+#carouselExampleIndicators ol li{
+    list-style: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 30px;
+}
+#carouselExampleIndicators li {background-color: #ff9800;}
+#carouselExampleIndicators li.active {background-color:#131313;}
+#carouselExampleIndicators a{
+    z-index: 3;
+    background: #ff9800;
+    width: 40px;
+    height: 40px;
+    top: 50%;
+}
+.Clint_Testimonial{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+.Testimonial_p{
+    margin-right: -250px;
+    text-align: right;
+    color: var(--fontcolor3);
+    font-size: 20px;
+    font-family: Cairo;
+    font-weight: 500;
+}
+.Clintdata_group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Clint_group2{
+    gap: 10px;
+    margin-top: -284px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Rectangle17{
+    width: 335px;
+    height: 18px;
+    background: rgba(197, 151, 24, 0.43);
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    z-index: 1;
+}
+.Clint_title{
+    color: var(--fontcolor3);
+    font-size: 35px;
+    font-family: Cairo;
+    font-weight: 500;
+}
+.Rectangle14{
+    width: 228px;
+    height: 422px;
+    background: var(--primary);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Rectangle15{
+    gap: 15px;
+    width: 296px;
+    height: 366px;
+    background: #FBFBFB;
+    border: 0.30px #646464 solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 50px;
+    z-index: 2;
+}
+.Clint_img{
+    width: 202px;
+    height: 222px;
+}
+.Clint_name{
+    color: var(--fontcolor3);
+    font-size: 25px;
+    font-family: Cairo;
+    font-weight: 500;
+}
+.Clint_joptitle{
+    color: var(--primary);
+    font-size: 20px;
+    font-family: Cairo;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*-- ======== Join us Area =======--*/
+
+.JoinUs_container{
+    gap: 100px;
+    padding: 100px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid var(--background1);
+}
+.JoinUs_contint{
+    gap: 95px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.JoinUs_text{
+    color: var(--fontcolor3);
+    font-size: 30px;
+    font-weight: 500;
+    font-family: Cairo;
+}
+.JoinUs_container .JoinNow_btn{
+    padding: 20px 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-- ======== Shortcuts Area =======--*/
+
+.Shortcuts_container{
+    gap: 40px;
+    padding: 60px 0px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid var(--background1);
+}
+.Shortcuts_head{
+    color: #131313;
+    font-family: Cairo;
+    font-size: 60px;
+    font-weight: 600;
+}
+.Shortcuts_group{
+    gap: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.singelgroup{
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 370px;
+    font-family: Cairo;
+    font-size: 30px;
+    text-decoration: none;
+    fill: var(--primary);
+    stroke: var(--primary);
+    color: var(--fontcolor3);
+    background: #FBFBFB;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    transition: 0.3s;
+}
+.singelgroup_subtitle,
+.singelgroup_title{
+    font-weight: 600;
+}
+.singelgroup_subtitle{
+    color: var(--fontcolor2);
+    transition: 0.3s;
+}
+.singelgroup:hover{
+    background: var(--primary);
+    color: var(--fontcolor);
+    fill: var(--fontcolor);
+    stroke: var(--fontcolor);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+}
+.singelgroup:hover .singelgroup_subtitle{
+    color: var(--fontcolor);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-- ======== News Area =======--*/
+.News_container{
+    padding-bottom: 60px;
+}
+.News_group{
+    padding: 0px 0px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.News_group img{
+    filter: blur(1px);
+}
+.News_box{
+    position: absolute;
+    top: 0px;
+    padding: 50px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--filter);
+    z-index: 2;
+}
+.News_date,
+.News{
+    color: var(--primary);
+    font-family: Cairo;
+    font-size: 20px;
+    font-weight: 700;
+}
+.News{
+    color: var(--fontcolor);
+}
+
+.slide_container{
+    width: 100%;
+    padding: 70px 0px;
+}
+.swiper_navBtn{
+    color: var(--primary);
+    transition: 0.3s ease;
+}
+.swiper_navBtn::before,
+.swiper_navBtn::after{
+    font-size: 40px;
+}
+.swiper-pagination-bullet{
+    background-color: var(--secoundary);
+}
+.swiper-pagination-bullet-active{
+    background-color: var(--primary);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*-- ======== Need Help Area =======--*/
+
+.NeedHelp_container{
+    gap: 150px;
+    padding: 60px 80px 100px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    border-bottom: 1px solid var(--background1);
+}
+.NeedHelp_title{
+    font-size: 30px;
+    font-weight: 600;
+}
+.ContactArea_img{
+    border-radius: 5px;
+}
+.ContactArea_frame{
+    gap: 30px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+}
+.ContactArea_head{
+    gap: 10px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+}
+#Contact_form{
+    gap: 20px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+}
+.FormInput,
+.FormInput_Message{
+    height: 54px;
+    background: #ff990066;
+    border-radius: 3px;
+    border: 1px rgba(197, 151, 24, 0.43) solid;
+    justify-content: flex-start;
+    align-items: center;
+    display: inline-flex;
+}
+#phone{
+    text-align: right;
+}
+.FormInput_Message{
+    height: 166px;
+}
+.FormInput input,
+#message{
+    width: 516px;
+    margin-right: 20px;
+    border: none;
+    outline: none;
+    background: transparent;
+    align-self: stretch;
+    justify-content: flex-start;
+    display: inline-flex
+}
+#message{
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-- ======== Our Branches Area =======--*/
+
+.OurBranches_container{
+    padding: 60px 80px;
+    gap: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: Cairo;
+    border-bottom: 1px solid var(--background1);
+}
+.Branches_box{
+    gap: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.Branches_title{
+    color: var(--fontcolor3);
+    font-size: 60px;
+    font-weight: 600;
+}
+.Branches_group,
+.Branches{
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.Branches_subtitle{
+    color: var(--primary);
+    font-size: 30px;
+    font-weight: 600;
+}
+.Branches{
+    gap: 20px;
+}
+.Branch_name{
+    color: var(--fontcolor3);
+    font-size: 30px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.map{
+    border: 2px solid var(--primary);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width : 250px) and (max-device-width: 1200px){
+
+
+    .inner_text{
+        top: 10%;
+        right: 15%;
+        gap: 20px;
+    }
+    .slider_text1{
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .slider_text2{
+        font-size: 12px;
+        font-weight: 500;
+        width: 80%;
+    }
+
+        
+
+
+
+
+
+
+
+    /*-- ======== track shipment =======--*/
+
+    .track_shipment{
+        gap: 20px;
+        padding: 40px 10px;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .trackshipment_container{
+        gap: 50px;
+    }
+    .trackshipment_options{
+        gap: 20px;
+        display: flex;
+        justify-content: center;
+    }
+    .trackshipment_options a{
+        gap: 5px;
+        font-size: 13px;
+        font-weight: 500;
+    }
+
+    .trackshipment_input{
+        gap: 20px;
+    }
+    .shipmentnumber_group input{
+        width: 250.003px;
+    }
+    .shipmentnumber_group label{
+        font-size: 13px;
+    }
+
+    .trackshipment_note{
+        font-size: 15px;
+        font-weight: 400;
+    }
+    .trackinput_container{
+        gap: 15px;
+    }
+    .trackshipment_photo{
+        width: 350px;
+    }
+
+
+
+
+
+
+
+
+
+    /*-- ======== Services Area =======--*/
+
+    .OurServices_area{
+        gap: 30px;
+        padding: 35px 0px; 
+    }
+    .OurServices_title,
+    .OurServices_subtitle{
+        font-size: 40px;
+        font-weight: 600;
+    }
+    .OurServices_subtitle{
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .OurServices_container{
+        gap: 50px;
+        flex-direction: column;
+    }
+
+    .service_name{
+        font-size: 30px;
+        font-weight: 500;
+    }
+    .service_details{
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .MoreServices{
+        font-size: 18px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*-- ======== Testimonial Area =======--*/
+
+    .Testimonial_container,
+    .News_container{
+        gap: 80px;
+        padding: 20px 0px;
+    }
+    .Testimonial_header,
+    .News_header{
+        gap: 20px;
+    }
+    .Testimonial_header{
+        text-align: center;
+    }
+    .Testimonial_title,
+    .News_title{
+        font-size: 40px;
+        font-weight: 600;
+    }
+    .Testimonial_subtitle{
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .Clint_Testimonial{
+        flex-direction: column;
+        height: auto;
+        margin-bottom: 150px;
+    }
+    .Testimonial_p{
+        margin: 20px 10px 0px 10px;
+        font-size: 13px;
+        font-weight: 500;
+    }
+    .Rectangle17{
+        width: 165px;
+    }
+    .Clint_title{
+        font-size: 25px;
+        font-weight: 500;
+    }
+    .Rectangle14{
+        width: 178px;
+        height: 402px;
+    }
+    .Rectangle15{
+        gap: 15px;
+        width: 196px;
+        height: 366px;
+        padding: 0px 30px;
+    }
+    .Clint_img{
+        width: 182px;
+        height: 202px;
+    }
+    .Clint_name{
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .Clint_joptitle{
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*-- ======== Join us Area =======--*/
+
+    .JoinUs_container{
+        gap: 50px;
+        flex-direction: column;
+    }
+    .JoinUs_contint{
+        gap: 55px;
+        margin: 0px 15px;
+        align-items: center;
+    }
+    .JoinUs_text{
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .JoinUs_container .JoinNow_btn{
+        padding: 20px 50px;
+    }
+    .JoinUs_img{
+        display: none;
+    }
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    /*-- ======== Shortcuts Area =======--*/
+
+    .Shortcuts_container{
+        gap: 40px;
+        padding: 60px 0px 100px;
+    }
+    .Shortcuts_head{
+        font-size: 40px;
+        font-weight: 600;
+    }
+    .Shortcuts_group{
+        gap: 30px;
+        display: grid;
+    }
+    .singelgroup{
+        width: 350px;
+        height: 320px;
+    }
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    /*-- ======== Need Help Area =======--*/
+
+    .NeedHelp_container{
+        gap: 100px;
+        padding: 50px 25px;
+        flex-direction: column;
+    }
+    .DivContactArea{
+        gap: 50px;
+        display: grid;
+    }
+    .ContactArea_img{
+        width: 100%;
+        aspect-ratio: 3/2;
+        object-fit: contain;
+    }
+    .ContactArea_frame{
+        width: 100%;
+    }
+    .ContactArea_head{
+        margin-left: 35px;
+    }
+    .ContactArea_title{
+        font-size: 13px;
+    }
+    .ContactArea_subtitle{
+        font-size: 29px;
+    }
+    #Contact_form{
+        margin-right: 0px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        display: grid;
+    }
+    .FormInput_Message{
+        height: 166px;
+    }
+    .FormInput input,
+    #message{
+        width: 300px;
+    }
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*-- ======== Our Branches Area =======--*/
+
+    .OurBranches_container{
+        padding: 30px;
+        gap: 50px;
+    }
+    .Branches_box{
+        gap: 50px;
+        display: flex;
+        flex-direction: column;
+    }
+    .Branches_title{
+        color: var(--fontcolor3);
+        font-size: 40px;
+        font-weight: 600;
+    }
+    .Branches_group,
+    .Branches{
+        gap: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .Branches_subtitle{
+        color: var(--primary);
+        font-size: 25px;
+        font-weight: 600;
+    }
+    .Branches{
+        gap: 20px;
+    }
+    .Branch_name{
+        color: var(--fontcolor3);
+        font-size: 20px;
+        font-weight: 600;
+        cursor: pointer;
+    }
+    .map{
+        border: 2px solid var(--primary);
+    }
+    .location{
+        width: 85vw;
+        height: 50vh;
+    }
+}
+
+@media only screen and (min-width : 491px) and (max-width: 800px){
+
+}
+
+
+@media only screen and (min-width : 600px) and (max-width: 1200px){
+ 
+    
+}
